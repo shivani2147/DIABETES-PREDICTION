@@ -16,46 +16,28 @@
 - Age --> Age (years)
 - Outcome --> Class variable (0 or 1)
 
+
 --- 
 ### Through this analysis, I seek to understand the following:
-1. It's a Classification based task
-2. There are 768 records and 9 features
-    - "Outcome" is the Target feature
-3. No null values or duplicate values found
-4. Types of data are Numerics only
-5. Number of Non-Diabetic patients are 500 (65%) and Diabetic patients are 268 (35%).
-6. Outliers found in [Pregnancies, Glucose and Skin Thickness]
-    - Identified row number and then removed
-7. Skewness Found :
-    - Checked the distribution with the help of histplot visualization
-    - Checked the one by one Skewness
-    - Checked the correlation
-    - Checked if there's any negative value
-    - Applied lock transformation to [Glucose, DiabetesPedigreeFunction and Age]
-8. Split Input Features and Output Target from the dataset
-9. Applied StandardScalar on Input features (fit_transform)
-10. Split the data into 80% and 20%
-11. Created Baseline Model
-    - Train, Test / Predict, Confusion Matrix, Classification Report, Accuracy
-12. Logistic Regression
-    - Accuracy - 81.58% 
-13. Decision Tree Classifier
-    - Accuracy - 75.66%
-    - Check Feature Importances and created a Tree to visualise it
+1. It's a classification-based task.
+2. The dataset comprises 768 Records and 9 Features, with "Outcome" serving as the Target feature.
+3. No null or duplicate values were detected, and the data types are exclusively numeric.
+4. Out of the total, 500 (65%) patients are Non-Diabetic, while 268 (35%) are Diabetic.
+5. Outliers were identified in "Pregnancies," "Glucose," and "Skin Thickness" features, and corresponding rows were removed.
+6. Skewness Found :
+    - Analyzed distribution using Histogram plots.
+    - Assessed skewness individually.
+    - Examined correlation.
+    - Checked if there's any negative value.
+    - Applied logarithmic transformation (log()) to 'Glucose', 'DiabetesPedigreeFunction', and 'Age'.
+7. The dataset was split into Input features and Output target
+8. Applied StandardScalar on Input features 
+9. Data was split into 80% Training and 20% Testing sets.
+10. A Baseline Model was created, including Training, Testing / Predicting, Confusion Matrix generation, Classification Report, Accuracy
+11. Logistic Regression achieved an accuracy of 81.58%.
+12. Decision Tree Classifier achieved an accuracy of 75.66%, with Feature Importances examined and a visualization created by creating a Tree like structure.
     - Here, "Glucose" is the most information feature
-14. Pruning Technique
-    - Entropy (max_depth = 4) --> Accuracy - 75.0%
-    - Entropy (min_samples_leaf = 50) --> Accuracy - 73.03%
-    - Here, Glucose, BMI & Age feature are important
-15. Ensembling Technique :
-    - Random Forest Classifier --> Accuracy - 76.32%
-    - Ada Boost Classifier --> Accuracy - 80.26%
-    - Gradient Boosting --> Accuracy - 70.39%
-    - Extreme Gradient Boosting --> Accuracy - 81.58%
-16. K-Nearest Neighbor (KNN)
-    - Accuracy - 81.58%
-17. Support Vector Machine
-    - Linear --> Accuracy - 81.58%
-    - Non-Linear :
-      - Polynomial Kernel Function --> Accuracy - 81.58%
-      - Radial Basis Kernel Function --> Accuracy - 81.58%
+13. Pruning Techniques were applied with varying parameters, resulting in accuracies of 75.0% (max_depth = 4) and 73.03% (min_samples_leaf = 50), highlighting the importance of "Glucose," "BMI," and "Age" features.
+14. Ensemble Techniques such as Random Forest Classifier (76.32%), AdaBoost Classifier (80.26%), Gradient Boosting (70.39%), and Extreme Gradient Boosting (81.58%) were implemented.
+15. K-Nearest Neighbor (KNN) achieved an accuracy of 81.58%.
+16. Support Vector Machine (SVM) achieved an accuracy of 81.58% for both Linear and Non-Linear (Polynomial and Radial Basis) Kernel Functions.
