@@ -1,6 +1,6 @@
 # Diabetes Prediction
 - This dataset originates from the National Institute of Diabetes, Digestive and Kidney Diseases, a reputable health institute.
-- The primary objective of this dataset is to predict whether a patient has diabetes based on various test results and health indicators.
+- The primary objective of this dataset is to predict whether a patient has Diabetes based on various test results and health indicators.
 - It serves as a valuable resource for healthcare professionals and data scientists to develop predictive models and algorithms aimed at early detection and management of diabetes.
 - It includes various features such as glucose levels, blood pressure, body mass index (BMI), and other medical indicators commonly associated with diabetes.
 - By leveraging machine learning algorithms on this dataset, researchers aim to enhance diagnostic accuracy and provide early intervention for individuals at risk of diabetes.
