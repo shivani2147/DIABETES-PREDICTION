@@ -29,7 +29,7 @@
     - Assessed skewness individually.
     - Examined correlation.
     - Checked if there's any negative value.
-    - Applied logarithmic transformation (log()) to 'Glucose', 'DiabetesPedigreeFunction', and 'Age'.
+    - Applied logarithmic transformation (log()) to 'DiabetesPedigreeFunction', and 'Age'.
 7. The dataset was split into Input features and Output target
 8. Applied StandardScalar on Input features 
 9. Data was split into 80% Training and 20% Testing sets.
